@@ -16,5 +16,5 @@ jobs:
         run: swift --version
 
       - name: Build
-        run: swift build
+        run: xcodebuild build
 
