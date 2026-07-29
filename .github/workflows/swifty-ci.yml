@@ -18,6 +18,7 @@ jobs:
       - name: Build
         run: |
             xcodebuild \
+                test \
                 -project MySwiftyRepo.xcodeproj \
                 -scheme MySwiftyRepo \
                 -destination 'platform=macOS' \
