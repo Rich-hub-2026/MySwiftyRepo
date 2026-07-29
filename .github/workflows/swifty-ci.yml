@@ -23,5 +23,4 @@ jobs:
                 -scheme MySwiftyRepo \
                 -destination 'platform=iOS Simulator,name=iPhone 17'
                 CODE_SIGNING_ALLOWED=NO \
-                build
 
