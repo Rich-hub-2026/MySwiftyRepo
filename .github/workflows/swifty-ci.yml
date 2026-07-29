@@ -16,5 +16,11 @@ jobs:
         run: swift --version
 
       - name: Build
-        run: xcodebuild build
+        run: |
+        xcodebuild \
+      -project MySwiftyRepo.xcodeproj \
+      -scheme MySwiftyRepo \
+      -destination 'platform=macOS' \
+      CODE_SIGNING_ALLOWED=NO \
+      build
 
