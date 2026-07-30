@@ -6,11 +6,10 @@
 //
 
 struct Catbreeds {
-    var nameOfBreed : String
-    
+    var nameOfBreed: String
+
     mutating func getCatName(breed: String) {
         self.nameOfBreed = breed
         print("Hi my name is \(nameOfBreed)")
     }
 }
-

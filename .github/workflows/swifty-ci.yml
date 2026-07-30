@@ -14,7 +14,13 @@ jobs:
 
       - name: Show Swift Version
         run: swift --version
+        
+      - name: Install SwiftLint
+        run: brew install swiftlint
 
+      - name: Run SwiftLint
+        run: swiftlint
+        
       - name: Build
         run: |
             xcodebuild \
