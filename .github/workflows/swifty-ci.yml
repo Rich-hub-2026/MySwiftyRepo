@@ -29,5 +29,12 @@ jobs:
                 -scheme MySwiftyRepo \
                 -destination 'platform=iOS Simulator,name=iPhone 17'
                 -enableCodeCoverage YES \
+                -resultBundlePath TestResults.xcresult
                 CODE_SIGNING_ALLOWED=NO \
 
+      - name: Upload Test Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: TestResults
+          path: TestResults.xcresult
