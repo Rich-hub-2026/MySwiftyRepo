@@ -27,9 +27,9 @@ jobs:
                 test \
                 -project MySwiftyRepo.xcodeproj \
                 -scheme MySwiftyRepo \
-                -destination 'platform=iOS Simulator,name=iPhone 17'
+                -destination 'platform=iOS Simulator,name=iPhone 17' \
                 -enableCodeCoverage YES \
-                -resultBundlePath TestResults.xcresult
+                -resultBundlePath TestResults.xcresult \
                 CODE_SIGNING_ALLOWED=NO \
 
       - name: Upload Test Results
